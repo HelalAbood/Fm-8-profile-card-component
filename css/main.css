@@ -12,35 +12,20 @@ body {
 }
 main { 
     height: 100vh;
-    background-color: var(--Dark-cyan);
     position: relative;
     overflow: hidden;
+    background: url(../imgs/bg-pattern-top.svg),url(../imgs/bg-pattern-bottom.svg); 
+    background-position: right 52vw bottom 35vh,left 48vw top 52vh; 
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--Dark-cyan);
 }
-main .top { 
-    position: absolute;
-    left: -250px;
-    top: -60%;
-}
-main .bottom { 
-    position: absolute;
-    right: -250px;
-    bottom: -60%;
-}
-@media (max-width: 767px) { 
-    main .top { 
-        top: -50%;
-        left: -220%;
-    }
-    main .bottom { 
-        bottom: -50%;
-        right: -220%;
-    }
-}
+
 .content { 
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin-top: -8px;
 }
 .box { 
     border-radius: 1rem;
