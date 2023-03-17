@@ -18,22 +18,22 @@ main {
 }
 main .top { 
     position: absolute;
-    left: -150px;
+    left: -250px;
     top: -60%;
 }
 main .bottom { 
     position: absolute;
-    right: -150px;
+    right: -250px;
     bottom: -60%;
 }
 @media (max-width: 767px) { 
     main .top { 
         top: -50%;
-        left: -200%;
+        left: -220%;
     }
     main .bottom { 
         bottom: -50%;
-        right: -200%;
+        right: -220%;
     }
 }
 .content { 
@@ -47,6 +47,12 @@ main .bottom {
     background-color: white;
     position: relative;
     border-radius: 1rem;
+    box-shadow: 0 0 20px 1px hsl(229deg 23% 23% / 10%);
+}
+.box .backg { 
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    box-shadow: 0 0 20px 1px hsl(229deg 23% 23% / 5%);
 }
 .box .avatar { 
     position: absolute;
@@ -54,11 +60,36 @@ main .bottom {
     top: 100px;
     transform: translateX(-50%);
     border-radius: 50%;
-    border: 4px solid white;
+    border: 5px solid white;
 }
 .box .info { 
     padding: 20px; 
     margin: 40px auto;
     text-align: center;
-    border-bottom: 1px solid var(--Dark-gray) ;
+    border-bottom: 1px solid hsla(0, 0%, 59%, 0.267) ;
+}
+.box .info h3 span { 
+    color: var(--Dark-gray);
+    font-size: 18px;
+}
+.box .info p { 
+    color: var(--Dark-gray);
+    margin-top: -10px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.box .num { 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: -30px auto;
+}
+.box .num .text h2 { 
+    font-size: 18px;
+}
+.box .num .text p { 
+    margin-top: -10px;
+    font-size: 14px;
+    color: var(--Dark-gray);
 }
