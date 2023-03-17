@@ -8,4 +8,31 @@
 body {
     margin: 0;
     font-family: 'Kumbh Sans', sans-serif;
+
+}
+main { 
+    height: 100vh;
+    background-color: var(--Dark-cyan);
+    position: relative;
+    overflow: hidden;
+}
+main .top { 
+    position: absolute;
+    left: -150px;
+    top: -60%;
+}
+main .bottom { 
+    position: absolute;
+    right: -150px;
+    bottom: -60%;
+}
+@media (max-width: 767px) { 
+    main .top { 
+        top: -50%;
+        left: -200%;
+    }
+    main .bottom { 
+        bottom: -50%;
+        right: -200%;
+    }
 }
